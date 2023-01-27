@@ -24,6 +24,9 @@ Route::resource('login','App\http\Controllers\login');
 
 Route::resource('dashboard','App\http\Controllers\dashboard');
 
+Route::resource('dashboardcommerce','App\http\Controllers\dashboardcommerce');
+
+
 
 Route::post('post-login','App\http\Controllers\login@postLogin');
 

@@ -12,7 +12,7 @@ use DB;
 //use App\Usuario;
 
 
-class login extends Controller
+class dashboardcommerce extends Controller
 {
     //
 	
@@ -37,17 +37,8 @@ var_dump($users);
 	
 	public function index(){
 		
-		
 
-$users = [
-  'Joel',
-  'Ellie',
-  'Tess'
-];
-
-return view('login')
-  ->with('users', $users)
-  ->with('title', 'Listado de usuarios');
+return view('dashboardcommerce');
   
 		
 	}
@@ -83,17 +74,7 @@ return view('login')
 			if($user->username==$_POST["email"])
 			{
 				
-				session_start();
-
-				/*session is started if you don't write this line can't use $_Session  global variable*/
-
-				$_SESSION["logon"]=1;
-
-
 				return redirect()->intended('dashboard');
-				
-				
-				
 			}
 			
 		}
@@ -123,19 +104,7 @@ return view('login')
      
     public function dashboard()
     {
-		
-		session_start();
-		
-		if($_SESSION["logon"]==1)
-		{
-			return view('dashboard');
-			
-		}
-		
-		
-		return view('opps');
-		
- 
+ return view('dashboard');
       /*if(Auth::check()){
         return view('dashboard');
       }
