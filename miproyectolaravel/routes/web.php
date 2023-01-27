@@ -18,3 +18,20 @@ Route::get('/', function () {
 });
 
 Route::resource('tictactoe','App\http\Controllers\tictactoe');
+
+
+Route::resource('login','App\http\Controllers\login');
+
+Route::resource('dashboard','App\http\Controllers\dashboard');
+
+
+Route::post('post-login','App\http\Controllers\login@postLogin');
+
+
+
+/*Route::post('post-login', 'AuthController@postLogin'); 
+  Route::get('registration', 'AuthController@registration');
+  Route::post('post-registration', 'AuthController@postRegistration'); 
+  Route::get('dashboard', 'AuthController@dashboard'); 
+  Route::get('logout', 'AuthController@logout');*/
+  

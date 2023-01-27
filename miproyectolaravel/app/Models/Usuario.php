@@ -13,7 +13,7 @@ use DB;
 class Usuario extends Authenticatable
 {
 	
-	public function todo(){
+	public static function todo(){
 		
 		
 		$users = DB::select("select * from usuario");
