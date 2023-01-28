@@ -31,9 +31,9 @@
 <body>
 
 
-<!-- <div class="theme-loader"> -->
-<!-- <div class="ball-scale" -->
-<!-- <div class='contain'>-->
+<div class="theme-loader"> 
+<div class="ball-scale">
+<div class='contain'>
 
 
 
@@ -2137,7 +2137,7 @@ out</button>
 </div>
 </div>
 </div>
-<!-- <div id="styleSelector"> --> 
+<!-- <div id="styleSelector"> -->
 </div>
 </div>
 </div>
